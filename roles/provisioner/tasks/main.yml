@@ -21,10 +21,10 @@
     dest: /root/.ssh/id_rsa.pub
     mode: '644'
 
-# - name: Bootstrap ansible on provisioner 
-#   ansible.builtin.shell: 
-#     cmd: scripts/bootstrap-ansible.sh > /var/log/bootstrap-ansible.log
-#     chdir: /opt/openstack-ansible
+- name: Bootstrap ansible on provisioner 
+  ansible.builtin.shell: 
+    cmd: scripts/bootstrap-ansible.sh > /var/log/bootstrap-ansible.log
+    chdir: /opt/openstack-ansible
 
 - name: Copy openstack deployment files from installer
   ansible.builtin.copy:
