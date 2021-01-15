@@ -1,0 +1,14 @@
+---
+
+
+- hosts: all
+  roles:
+  - role: common
+
+- hosts: openstack_provisioner
+  roles:
+  - role: provisioner
+
+- hosts: hosts
+  roles:
+  - role: targethosts

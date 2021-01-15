@@ -1,0 +1,10 @@
+needed_packages:
+- aptitude
+- build-essential
+- git
+- ntp
+- ntpdate
+- openssh-server
+- python-dev
+- sudo
+# - "linux-modules-extra-$(uname -r)" do this?

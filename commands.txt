@@ -1,0 +1,4 @@
+ansible-playbook -h hosts playbook.yml -b
+
+cd /opt/openstack-ansible/playbooks
+openstack-ansible setup-everything.yml

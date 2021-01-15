@@ -1,0 +1,10 @@
+[openstack_provisioner]
+192.168.1.131 ansible_user=ubuntu ansible_ssh_private_key_file=provisioner_key
+
+
+[hosts]
+192.168.1.117 ansible_user=ubuntu ansible_ssh_private_key_file=provisioner_key
+192.168.1.165 ansible_user=ubuntu ansible_ssh_private_key_file=provisioner_key
+192.168.1.65 ansible_user=ubuntu ansible_ssh_private_key_file=provisioner_key
+192.168.1.140 ansible_user=ubuntu ansible_ssh_private_key_file=provisioner_key
+192.168.1.122 ansible_user=ubuntu ansible_ssh_private_key_file=provisioner_key

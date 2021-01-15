@@ -1,0 +1,15 @@
+
+
+- name: Update the system
+  apt:
+    name: "*"
+    state: latest
+    update_cache: yes
+
+# TODO: maybe update ntp
+
+# TODO: generate key dinamically?
+#- name: Generate an OpenSSH keypair with the default values (4096 bits, rsa)
+#  community.crypto.openssh_keypair:
+#    path: ~/.ssh/id_ssh_rsa
+

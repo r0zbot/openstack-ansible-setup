@@ -1,0 +1,10 @@
+- name: Install dependencies
+  apt:
+    name: "{{ needed_packages }}"
+    state: present
+
+- name: Copy ssh public key
+  ansible.builtin.copy:
+    src: provisioner_key.pub
+    dest: /root/.ssh/authorized_keys
+    mode: '644'
